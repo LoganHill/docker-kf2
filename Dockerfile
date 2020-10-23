@@ -2,7 +2,7 @@ FROM ubuntu:xenial
 
 RUN \
 	apt-get -y update && \
-	apt-get -y install wget lib32gcc1 libcurl14-openssl-dev && \
+	apt-get -y install wget lib32gcc1 libcurl4-openssl-dev && \
 	apt-get clean && \
 	find /var/lib/apt/lists -type f | xargs rm -vf
 
