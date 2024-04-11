@@ -8,7 +8,7 @@ RUN \
 	find /var/lib/apt/lists -type f | xargs rm -vf
 
 RUN useradd -m steam
-
+RUN chown -R steam:steam /home/steam
 WORKDIR /home/steam
 USER steam
 
